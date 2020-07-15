@@ -1,120 +1,104 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.35in,top=0.25in,right=0.35in,bottom=0.25in]{geometry} % Document margins
+\usepackage{hyperref}
 
-\name{William Boyles} % Your name
-\address{github.com/wmboyles \\ wmboyles.com \\ linkedin.com/wmboyles} % Secondary address
-\address{(336)~$\cdot$~749~$\cdot$~6144 \\ wmboyle2@ncsu.edu} % Your phone number and email
+\setlength\fboxsep{1em}
+\name{\colorbox{NCSURED}{\textcolor{WHITE}{William Boyles}}} % Your name
+
+\address{\href{https://github.com/wmboyles}{github.com/wmboyles} \\ \href{https://wmboyles.com}{wmboyles.com} \\ \href{https://linkedin.com/in/wmboyles}{linkedin.com/in/wmboyles}} % Secondary address
+\address{(336)$\cdot$749$\cdot$6144 \\ wmboyle2@ncsu.edu} % Your phone number and email
+
 
 \begin{document}
-
+\setlength\fboxsep{0.33em}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Education}
+\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Education}}}
 {\bf North Carolina State University} \hfill {2018 - 2022} \\ 
 B.S. in Computer Science, Minor in Mathematics \hfill {\em GPA: 4.0}\\
-University Honors Program, Dean's List \\
+University Honors Program, Dean's List
 
 \end{rSection}
 
 
 %	TECHNICAL SKILLS SECTION
-\begin{rSection}{Technical Skills}
-
+\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Technical Skills}}}
 	\textbf{
-		{Java} \textbar
+		{Languages:}
 		{ Python} \textbar
-		{ C} \textbar
-		{ C++} \textbar
+		{ Java} \textbar
 		{ JavaScript} \textbar
-		{ Node} \textbar
-		{ Socket.io} \textbar
+		{ C} \textbar
+		{ \LaTeX} \textbar
+		{ HTML} \textbar
+		{ CSS} \textbar
+		{ Bash} \\
+		{Technologies:}
+		{ Docker} \textbar
+		{ Node.js} \textbar
+		{ Jenkins} \textbar
+		{ Git} \textbar
 		{ Express} \textbar
 		{ React} \textbar
-		{ Linux} \textbar
-		{ HTML} \textbar
-		{ CSS} \\
-		{ Bootstrap} \textbar
-		{ Bash} \textbar
-		{ Git} \textbar
-		{ Jenkins} \textbar
-		{ LaTeX}
-	}
-	
+		{ Bootstrap}
+	}	
 \end{rSection}
 
 
 %	WORK EXPERIENCE SECTION
-\begin{rSection}{Experience}
-
-	\begin{rSubsection}{IBM}{Summer 2020}{Cloud Automation Intern}{Durham, NC}
-		\item TODO
-		\item TODO
-		\item TODO
+\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Experience}}}
+	\begin{rSubsection}{IBM}{Summer 2020}{Cloud \& Cognitive Software Intern}{Research Triangle Park, NC}
+		\item Created Python tool to visualize cloud outages and identify root causes in real-time, driving response improvements
+		\item Developed Python Slack bot to provide actionable, on-demand data to outage responders
+		\item Overhauled data pipeline via a technical redesign, increasing speeds by up to 5900\%
 	\end{rSubsection}
 
 	\begin{rSubsection}{Forsyth Country Day School}{Summers 2016 - 2019}{Engineering Camp Counselor}{Lewisville, NC}
 		\item Designed, implemented, and taught four one-week curricula of STEM activities for 4th-8th grade students
-		\item Activities included a hurricane house, egg drop, and marshmallow shooter
+		\item Hands-on activities included a hurricane house, egg drop, and marshmallow shooter
 	\end{rSubsection}
-	
+
+	\begin{rSubsection}{Pool Professionals}{Summers 2017 - 2019}{Lifeguard}{Winston-Salem, NC}
+		\item Collaborated with coworkers to ensure patron safety and site cleanliness
+		\item Entrusted with opening/closing duties and equipment maintenance  
+	\end{rSubsection}	
 \end{rSection}
 
 
 %	PROJECTS SECTION
-\begin{rSection}{Projects}
-
+\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Projects}}}
 	\begin{rSubsection}{Lights Out}{Android Mobile App}{}{}
 		\item Based on 1990's handheld electronic game, but has more features like customizable board sizes
 		\item Written in Java using Android Studio with Gradle
-		\item Released on Google Play Store December 2019
+		\item Released for free on Google Play Store for all Android devices
 	\end{rSubsection}
 	
 	\begin{rSubsection}{wmboyles.com}{Personal Website}{}{}
 		\item Personal domain containing resume, detailed projects, and contact info
-		\item Redesigned using Bootstrap, increasing mobile usability
+		\item Overhauled design to use Bootstrap, increasing mobile usability
 		\item Written without hand-holding builder tools
-	\end{rSubsection}
-	
+	\end{rSubsection}	
 \end{rSection}
 
 
 %	RELEVANT COURSEWORK SECTION
-\begin{rSection}{Relevant Coursework}
-	{Data Structures \& Algorithms}
+\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Relevant Coursework}}}
+	{Software Engineering}
+	\textbar { Data Structures and Algorithms}
 	\textbar { Java}
 	\textbar { C}
 	\textbar { Operating Systems}
-	\textbar { Assembly Language} \\
-	{Calculus}
-	\textbar{ Differential Equations}
+	\textbar { x86 \& ARM Assembly} \\
+	{Graph Theory}
+	\textbar { Automata, Grammars \& Computability}
 	\textbar { Linear Algebra}
-	\textbar { Discrete Math}
-	\textbar { Automata, Grammars, and Computability}
+	\textbar { Calculus}
+	\textbar { Differential Equations} \\
+	{Discrete Math}
+	\textbar { Statistics}
 \end{rSection}
 
 \end{document}
