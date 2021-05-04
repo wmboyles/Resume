@@ -1,0 +1,29 @@
+# This action compiles resume.tex into a pdf file
+
+name: Compile
+on:
+    push:
+        branches: [master]
+
+    workflow_dispatch:
+
+jobs:
+    compile:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Compile Resume
+              uses: vinay0410/tectonic-action@v1.1.2
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tex_path: ./resume.tex
+
+            - name: Push Changes
+              run: |
+                  git config --global user.name 'wmboyles'
+                  git config --global user.email 'wmboyles@users.noreply.github.com'
+                  git add -A
+                  git commit -m "Compile LaTeX files"
+                  git push
