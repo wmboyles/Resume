@@ -1,126 +1,181 @@
-% Use the custom resume.cls style
-\documentclass{resume}
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[12pt, a4paper]{awesome-cv}
 
-\usepackage[left=0.35in,top=0.25in,right=0.35in,bottom=0.25in]{geometry} % Document margins
-\usepackage{hyperref}
+% Configure page margins with geometry
+\geometry{left=0.75in, top=0.5in, right=0.75in, bottom=0.5in, footskip=0.5in}
 
-\setlength\fboxsep{1em}
-\name{\colorbox{NCSURED}{\textcolor{WHITE}{William Boyles}}} % Your name
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{RGB}{204, 0, 0}
 
-\address{
-	\href{mailto:wmboyles@wmboyles.com}{wmboyles@wmboyles.com} \\
-	\href{https://wmboyles.com}{wmboyles.com}
-}
-\address{
-	\href{https://github.com/wmboyles}{github.com/wmboyles} \\
-	\href{https://linkedin.com/in/wmboyles}{linkedin.com/in/wmboyles}
-}
+% Colors for text
+% Uncomment if you would like to specify your own color
+\colorlet{sectioncolor}{awesome}	% Names of sections
+% \definecolor{darktext}			% Used in institution names
+\colorlet{text}{darktext}			% Used in descriptions
+% \definecolor{graytext}
+% \definecolor{lighttext}
+\colorlet{sectiondivider}{darktext}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{William}{Boyles}
+%\position{Software Engineer}
+%\address{123 Sesame Street, New York, NY 11201}
+
+%\mobile{(+1) 123-456-7890}
+\email{wmboyles@wmboyles.com}
+%\dateofbirth{January 1st, 1970}
+\homepage{wmboyles.com}
+\github{wmboyles}
+\linkedin{wmboyles}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+%\quote{``Be the change that you want to see in the world."}
 
 
+%-------------------------------------------------------------------------------
 \begin{document}
-\setlength\fboxsep{0.33em}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Education}}}
-{\bf North Carolina State University} \hfill {2018 - 2022} \\ 
-B.S. in Computer Science \& Mathematics ----- Summa Cum Laude, Valedictorian \hfill {\em GPA: 4.0}\\
-University Honors Program, CSC Honors Program, Dean's List (8 semesters), Phi Beta Kappa
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL SKILLS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Technical Skills}}}
-	\textbf{Languages:
-		\hspace*{0.275cm}
-		{Python} \textbar
-		{ Java} \textbar
-		{ C\#} \textbar
-		{ JavaScript} \textbar
-		{ \LaTeX} \textbar
-		{ HTML} \textbar
-		{ CSS} \textbar
-		{ Bash}
-	} \newline
-	\textbf{Technologies:
-		{Kubernetes} \textbar
-		{ Docker} \textbar
-		{ Bootstrap} \textbar
-		{ React} \textbar
-		{ Git} \textbar
-		{ Selenium} \textbar
-		{ Jenkins}
-	}	
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Experience}}}
-	\begin{rSubsection}{Microsoft}{Summer 2021}{Software Engineering Intern}{Redmond, WA}
-		\item
-			Created Azure resources to monitor critical infrastructure for failures, improving response times
-		\item
-			Built monitoring tools in Azure for purchase infrastructure, ensuring government compliance
-		\item
-			Deployed solutions to production and airgapped government clouds
-	\end{rSubsection}
 	
-	\begin{rSubsection}{IBM}{Summer 2020}{Cloud \& Cognitive Software Intern}{Research Triangle Park, NC}
-		\item
-			Created Python tool to visualize cloud outages and identify root causes in real-time, driving response improvements
-		\item
-			Developed Python Slack bot to provide actionable, on-demand data to outage responders
-		\item
-			Overhauled data pipeline via a technical redesign, increasing speeds by up to 5900\%
-	\end{rSubsection}
-
-	\begin{rSubsectionEmpty}{Forsyth Country Day School}{Summers 2016 - 2019}{Engineering Camp Counselor}{Lewisville, NC}
-	\end{rSubsectionEmpty}
-
-	\begin{rSubsectionEmpty}{Pool Professionals}{Summers 2017 - 2019}{Lifeguard}{Winston-Salem, NC}
-	\end{rSubsectionEmpty}	
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Projects}}}
-	\begin{rSubsection}{Lights Out}{Android Mobile App}{}{}
-		\item Based on 1990's handheld electronic game, but has more features like dynamic board sizes
-		\item Written in Java using Android Studio with Gradle
-		\item Released for free on Google Play Store for all Android devices
-	\end{rSubsection}
+	% Print the header with above personal information
+	% Give optional argument to change alignment(C: center, L: left, R: right)
+	\makecvheader[C]
 	
-	\begin{rSubsection}{wmboyles.com}{Personal Website}{}{}
-		\item Personal domain containing resume, detailed projects, and contact info
-		\item Overhauled design to use Bootstrap, increasing mobile usability
-		\item Built using Jekyll, minimizing code redundancy
-	\end{rSubsection}	
-\end{rSection}
+	
+	%-------------------------------------------------------------------------------
+	%	CV/RESUME CONTENT
+	%-------------------------------------------------------------------------------
+	\cvsection{Education}
+	\begin{cventries}
+		\cventry
+		{B.S. in Computer Science and Mathematics}	% Degree
+		{North Carolina State University} 			% Institution
+		{Raleigh, NC} 								% Location
+		{2018 - 2022} 					% Date(s)
+		{
+			\begin{cvitems}
+				\item {Valedictorian, Summa Cum Laude, Phi Beta Kappa, Dean's List (8 semesters)}
+				\item {University Honors Program, Computer Science Honors Program}
+			\end{cvitems}
+		}
+	\end{cventries}
 
-%----------------------------------------------------------------------------------------
-%	RELEVANT COURSEWORK SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{\colorbox{NCSURED}{\textcolor{WHITE}{Relevant Coursework}}}
-	{Software Engineering}
-	\textbar { Data Structures \& Algorithms}
-	\textbar { Java}
-	\textbar { C}
-	\textbar { Operating Systems}
-	\textbar { Assembly} \\
-	{Graph Theory}
-	\textbar { Computational Geometry}
-	\textbar { Cryptography}
-	\textbar { Automata, Grammars \& Computability}
-	\textbar { Combinatorics} \\
-	{ Linear Algebra}
-	\textbar { Calculus}
-	\textbar { Differential Equations}
-	\textbar { Statistics}
-\end{rSection}
-
+	\cvsection{Experience}
+	\begin{cventries}
+		\cventry
+		{Software Engineering Intern} % Job title
+		{Microsoft} % Organization
+		{Redmond, WA} % Location
+		{Summer 2021} % Date(s)
+		{
+			\begin{cvitems} % Description(s) of tasks/responsibilities
+				\item {Created Azure resources to monitor critical infrastructure for failures, improving response times}
+				\item {Built monitoring tools in Azure for purchase infrastructure, ensuring government compliance}
+				\item {Deployed solutions to production and airgapped government clouds}
+			\end{cvitems}
+		}
+	
+		\cventry
+		{Cloud \& Cognitive Software Intern} % Job title
+		{IBM} % Organization
+		{Durham, NC} % Location
+		{Summer 2020} % Date(s)
+		{
+			\begin{cvitems} % Description(s) of tasks/responsibilities
+				\item {Created Python tool to visualize cloud outages and identify root causes in real-time, driving response improvements}
+				\item {Developed Python Slack bot to provide actionable, on-demand data to outage responders}
+				\item {Overhauled data pipeline via a technical redesign, increasing speeds by up to 5900\%}
+			\end{cvitems}
+		}
+	
+		\cventry
+		{Engineering Camp Counselor} % Job title
+		{Forsyth Country Day School} % Organization
+		{Lewisville, NC} % Location
+		{Summers 2016 - 2019} % Date(s)
+		{}
+		
+		\cventry
+		{Lifeguard} % Job title
+		{Pool Professionals} % Organization
+		{Winston Salem, NC} % Location
+		{Summers 2017 - 2019} % Date(s)
+		{}
+	\end{cventries}
+	
+	\cvsection{Projects}
+	\begin{cventries}
+		\cvprojectentry
+		{Lights Out} % Project Title
+		{Android Mobile App} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Based on 1990’s handheld electronic game, but has more features like dynamic board sizes}
+				\item {Written in Java using Android Studio}
+				\item {Released for free on Google Play Store for all Android devices}
+			\end{cvitems}
+		}
+	
+		\cvprojectentry
+		{NCAA Bracket Prediction} % Project Title
+		{Python Tool} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Automatically scrapes the latest game data and outputs predictions as a \LaTeX-compiled PDF}
+				\item {Python tool that implements PageRank, Elo, Bradley, and other custom ranking algorithms}
+				\item {Algorithms consistently outperform average prediction tournament entries and my personal predictions}
+			\end{cvitems}
+		}
+	
+		\cvprojectentry
+		{wmboyles.com} % Project Title
+		{Personal Website} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Personal domain containing resume, detailed project write-ups, and contact info}
+				\item {Overhauled design to use Bootstrap, increasing mobile usability}
+				\item {Built using Jekyll, minimizing code redundancy}
+			\end{cvitems}
+		}
+	
+		\cvprojectentry
+		{Math Summaries} % Project Title
+		{Open-Source Math Textbooks} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Summaries of math courses I took in college, including multivariable calculus and differential equations}
+				\item {Written in \LaTeX ~and published as PDFs, allowing open source contributions}
+				\item {Committed to the public domain, allowing users to always access information for free}
+			\end{cvitems}
+		}
+	\end{cventries}
+	
+	
 \end{document}
+
