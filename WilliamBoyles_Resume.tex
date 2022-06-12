@@ -2,10 +2,10 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, a4paper]{awesome-cv}
+\documentclass[a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=0.75in, top=0.5in, right=0.75in, bottom=0.5in, footskip=0.5in}
+\geometry{left=0.5in, top=0.25in, right=0.5in, bottom=0.25in, footskip=0.0in}
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -26,9 +26,6 @@
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
 
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -41,23 +38,9 @@
 
 %\mobile{(+1) 123-456-7890}
 \email{wmboyles@wmboyles.com}
-%\dateofbirth{January 1st, 1970}
 \homepage{wmboyles.com}
 \github{wmboyles}
 \linkedin{wmboyles}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-%\quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -129,6 +112,39 @@
 		{}
 	\end{cventries}
 	
+	\cvsection{Skills}
+%	\begin{cvskills}
+%		\cvskill{Languages}{
+%			{  Python  } \textbar
+%			{  Java  } \textbar
+%			{  C\#  } \textbar
+%			{  JavaScript  } \textbar
+%			{  \LaTeX  } \textbar
+%			{  HTML  }
+%		}
+%		\cvskill{Techologies}{
+%			{  Docker } \textbar
+%			{  Bootstrap  } \textbar
+%			{  React  } \textbar
+%			{  Git  }
+%		}
+%	\end{cvskills}
+	\begin{cvparagraph}
+		
+	\entrytitlestyle{Languages:}
+		{ Python } \textbar 
+		{ Java } \textbar
+		{ C\# } \textbar 
+		{ JavaScript } \textbar 
+		{ \LaTeX } \textbar 
+		{ HMTL } \newline\newline
+	\entrytitlestyle{Technologies:}
+		{ Docker } \textbar
+		{ Bootstrap } \textbar
+		{ React } \textbar
+		{ Git }
+	\end{cvparagraph}
+	
 	\cvsection{Projects}
 	\begin{cventries}
 		\cvprojectentry
@@ -166,12 +182,34 @@
 	
 		\cvprojectentry
 		{Math Summaries} % Project Title
-		{Open-Source Math Textbooks} % Project Type
+		{Open Source Math Textbooks} % Project Type
 		{
 			\begin{cvitems} % Descriptions
-				\item {Summaries of math courses I took in college, including multivariable calculus and differential equations}
+				\item {Summaries of college math courses, including multivariable calculus and differential equations}
 				\item {Written in \LaTeX ~and published as PDFs, allowing open source contributions}
 				\item {Committed to the public domain, allowing users to always access information for free}
+			\end{cvitems}
+		}
+	\end{cventries}
+
+	\cvsection{Writing}
+	\begin{cventries}
+		\cvprojectentry
+		{Most Clicks Problem in \textit{Lights Out}} % Project Title
+		{Research Article} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Work based on extension of 1990's electronic game}
+				\item {Introduced the Most Clicks Problem, and solves it for two specific instances}
+			\end{cvitems}
+		}
+	
+		\cvprojectentry
+		{Resolution to Sutner's Conjecture} % Project Title
+		{Research Article} % Project Type
+		{
+			\begin{cvitems} % Descriptions
+				\item {Proves 30+ year old conjecture related to the Lights Out Game}
 			\end{cvitems}
 		}
 	\end{cventries}
