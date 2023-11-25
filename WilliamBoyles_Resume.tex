@@ -8,8 +8,7 @@
 \geometry{left=0.5in, top=0.25in, right=0.5in, bottom=0.25in, footskip=0.0in}
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
 % \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
 \definecolor{awesome}{RGB}{204, 0, 0}
@@ -37,8 +36,8 @@
 %\address{123 Sesame Street, New York, NY 11201}
 
 %\mobile{(+1) 123-456-7890}
-\email{wmboyles@wmboyles.com}
-\homepage{wmboyles.com}
+\email{williamboyles22900@gmail.com}
+\homepage{wmboyles.net}
 \github{wmboyles}
 \linkedin{wmboyles}
 
@@ -57,10 +56,10 @@
 	\cvsection{Education}
 	\begin{cventries}
 		\cventry
-		{B.S. in Computer Science and Mathematics}	% Degree
+		{B.S. Computer Science \& Mathematics}		% Degree
 		{North Carolina State University} 			% Institution
 		{Raleigh, NC} 								% Location
-		{2018 - 2022} 					% Date(s)
+		{2018 - 2022} 								% Date(s)
 		{
 			\begin{cvitems}
 				\item {Valedictorian, Summa Cum Laude, Phi Beta Kappa, Dean's List (8 semesters)}
@@ -72,76 +71,65 @@
 	\cvsection{Experience}
 	\begin{cventries}
 		\cventry
-		{Software Engineering Intern} % Job title
-		{Microsoft} % Organization
-		{Redmond, WA} % Location
-		{Summer 2021} % Date(s)
+		{Software Engineer}	% Job title
+		{Microsoft} 		% Organization
+		{Redmond, WA} 		% Location
+		{August 2022 -} 	% Date(s)
 		{
 			\begin{cvitems} % Description(s) of tasks/responsibilities
-				\item {Created Azure resources to monitor critical infrastructure for failures, improving response times}
-				\item {Built monitoring tools in Azure for purchase infrastructure, ensuring government compliance}
-				\item {Deployed solutions to production and airgapped government clouds}
+				\item {Created near-real-time Spark data processing pipelines that handle terabytes of pricing data per day}
+				\item {Automated common interactions with production, reducing mitigation times and risk of unintended changes}
+				\item {Automated deployment of cloud infrastructure to airgapped environments, minimizing the need for manual steps}
 			\end{cvitems}
 		}
 	
 		\cventry
-		{Cloud \& Cognitive Software Intern} % Job title
-		{IBM} % Organization
-		{Durham, NC} % Location
-		{Summer 2020} % Date(s)
-		{
-			\begin{cvitems} % Description(s) of tasks/responsibilities
-				\item {Created Python tool to visualize cloud outages and identify root causes in real-time, driving response improvements}
-				\item {Developed Python Slack bot to provide actionable, on-demand data to outage responders}
-				\item {Overhauled data pipeline via a technical redesign, increasing speeds by up to 5900\%}
-			\end{cvitems}
-		}
+		{Software Engineering Intern}	% Job title
+		{Microsoft} 					% Organization
+		{Redmond, WA} 					% Location
+		{Summer 2021} 					% Date(s)
+		{}
 	
 		\cventry
-		{Engineering Camp Counselor} % Job title
-		{Forsyth Country Day School} % Organization
-		{Lewisville, NC} % Location
-		{Summers 2016 - 2019} % Date(s)
+		{Cloud \& Cognitive Software Intern}	% Job title
+		{IBM} 									% Organization
+		{Durham, NC} 							% Location
+		{Summer 2020} 							% Date(s)
+		{}
+	
+		\cventry
+		{Engineering Camp Counselor}	% Job title
+		{Forsyth Country Day School} 	% Organization
+		{Lewisville, NC} 				% Location
+		{Summers 2016 - 2019} 			% Date(s)
 		{}
 		
 		\cventry
-		{Lifeguard} % Job title
-		{Pool Professionals} % Organization
-		{Winston Salem, NC} % Location
-		{Summers 2017 - 2019} % Date(s)
+		{Lifeguard} 			% Job title
+		{Pool Professionals}	% Organization
+		{Winston Salem, NC} 	% Location
+		{Summers 2017 - 2019} 	% Date(s)
 		{}
 	\end{cventries}
 	
 	\cvsection{Skills}
-%	\begin{cvskills}
-%		\cvskill{Languages}{
-%			{  Python  } \textbar
-%			{  Java  } \textbar
-%			{  C\#  } \textbar
-%			{  JavaScript  } \textbar
-%			{  \LaTeX  } \textbar
-%			{  HTML  }
-%		}
-%		\cvskill{Techologies}{
-%			{  Docker } \textbar
-%			{  Bootstrap  } \textbar
-%			{  React  } \textbar
-%			{  Git  }
-%		}
-%	\end{cvskills}
+	
 	\begin{cvparagraph}
+	
 		
 	\entrytitlestyle{Languages:}
 		{ Python } \textbar 
-		{ Java } \textbar
+		{ Scala } \textbar
 		{ C\# } \textbar 
+		{ SQL } \textbar
+		{ Java } \textbar
 		{ JavaScript } \textbar 
-		{ \LaTeX } \textbar 
+		{ \LaTeX } \textbar
 		{ HMTL } \newline\newline
 	\entrytitlestyle{Technologies:}
-		{ Docker } \textbar
+		{ Spark } \textbar
+		{ Azure } \textbar
 		{ Bootstrap } \textbar
-		{ React } \textbar
 		{ Git }
 	\end{cvparagraph}
 	
@@ -149,12 +137,11 @@
 	\begin{cventries}
 		\cvprojectentry
 		{Lights Out} % Project Title
-		{Android Mobile App} % Project Type
+		{Android App} % Project Type
 		{
 			\begin{cvitems} % Descriptions
 				\item {Based on 1990’s handheld electronic game, but has more features like dynamic board sizes}
-				\item {Written in Java using Android Studio}
-				\item {Released for free on Google Play Store for all Android devices}
+				\item {Written in Java using Android Studio, released for free on Google Play Store}
 			\end{cvitems}
 		}
 	
@@ -163,20 +150,19 @@
 		{Python Tool} % Project Type
 		{
 			\begin{cvitems} % Descriptions
-				\item {Automatically scrapes the latest game data and outputs predictions as a \LaTeX-compiled PDF}
+				\item {Automatically scrapes the latest game data and outputs pre-filled bracket predictions as a \LaTeX-compiled PDF}
 				\item {Python tool that implements PageRank, Elo, Bradley, and other custom ranking algorithms}
 				\item {Algorithms consistently outperform average prediction tournament entries and my personal predictions}
 			\end{cvitems}
 		}
 	
 		\cvprojectentry
-		{wmboyles.com} % Project Title
+		{wmboyles.net} % Project Title
 		{Personal Website} % Project Type
 		{
 			\begin{cvitems} % Descriptions
 				\item {Personal domain containing resume, detailed project write-ups, and contact info}
-				\item {Overhauled design to use Bootstrap, increasing mobile usability}
-				\item {Built using Jekyll, minimizing code redundancy}
+				\item {Designed using Bootstrap and Jekyll, increasing mobile usability while minimizing code redundancy}
 			\end{cvitems}
 		}
 	
@@ -185,9 +171,8 @@
 		{Open Source Math Textbooks} % Project Type
 		{
 			\begin{cvitems} % Descriptions
-				\item {Summaries of college math courses, including multivariable calculus and differential equations}
-				\item {Written in \LaTeX ~and published as PDFs, allowing open source contributions}
-				\item {Committed to the public domain, allowing users to always access information for free}
+				\item {Summaries of college math courses written in \LaTeX ~and published as PDFs, allowing community contributions}
+				\item {Committed to the public domain, providing educational information for free}
 			\end{cvitems}
 		}
 	\end{cventries}
@@ -199,7 +184,6 @@
 		{Research Article} % Project Type
 		{
 			\begin{cvitems} % Descriptions
-				\item {Work based on extension of 1990's electronic game}
 				\item {Introduced the Most Clicks Problem, and solves it for two specific instances}
 			\end{cvitems}
 		}
