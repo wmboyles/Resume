@@ -1,41 +1,26 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=0.5in, top=0.25in, right=0.5in, bottom=0.25in, footskip=0.0in}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
-% \colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
 \definecolor{awesome}{RGB}{204, 0, 0}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
 \colorlet{sectioncolor}{awesome}	% Names of sections
-% \definecolor{darktext}			% Used in institution names
 \colorlet{text}{darktext}			% Used in descriptions
-% \definecolor{graytext}
-% \definecolor{lighttext}
-\colorlet{sectiondivider}{darktext}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
 \name{William}{Boyles}
-%\position{Software Engineer}
-%\address{123 Sesame Street, New York, NY 11201}
-
-%\mobile{(+1) 123-456-7890}
 \email{williamboyles22900@gmail.com}
 \homepage{wmboyles.net}
 \github{wmboyles}
@@ -47,9 +32,8 @@
 	
 	% Print the header with above personal information
 	% Give optional argument to change alignment(C: center, L: left, R: right)
-	\makecvheader[C]
-	
-	
+	\makecvheader
+
 	%-------------------------------------------------------------------------------
 	%	CV/RESUME CONTENT
 	%-------------------------------------------------------------------------------
@@ -69,6 +53,7 @@
 	\end{cventries}
 
 	\cvsection{Experience}
+	
 	\begin{cventries}
 		\cventry
 		{Software Engineer}	% Job title
@@ -82,7 +67,7 @@
 				\item {Automated deployment of cloud infrastructure to airgapped environments, minimizing the need for manual steps}
 			\end{cvitems}
 		}
-	
+
 		\cventry
 		{Software Engineering Intern}	% Job title
 		{Microsoft} 					% Organization
@@ -114,9 +99,7 @@
 	
 	\cvsection{Skills}
 	
-	\begin{cvparagraph}
-	
-		
+	\begin{cvparagraph}	
 	\entrytitlestyle{Languages:}
 		{ Python } \textbar 
 		{ Scala } \textbar
@@ -179,21 +162,24 @@
 
 	\cvsection{Writing}
 	\begin{cventries}
+		% Do not only put 1 cventry. See https://github.com/posquit0/Awesome-CV/issues/499
 		\cvprojectentry
 		{Most Clicks Problem in \textit{Lights Out}} % Project Title
 		{Research Article} % Project Type
 		{
 			\begin{cvitems} % Descriptions
 				\item {Introduced the Most Clicks Problem, and solves it for two specific instances}
+				\item {Published to ArXiv}
 			\end{cvitems}
 		}
-	
+
 		\cvprojectentry
 		{Resolution to Sutner's Conjecture} % Project Title
 		{Research Article} % Project Type
 		{
 			\begin{cvitems} % Descriptions
 				\item {Proves 30+ year old conjecture related to the Lights Out Game}
+				\item {Published to ArXiv}
 			\end{cvitems}
 		}
 	\end{cventries}
